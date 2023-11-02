@@ -1,0 +1,26 @@
+1.定义一个整型数组并初始化后，在循环语句中使用两条 if 语句分别，找出最大值和最小值，每当判断输入的整数是负数时，就重新输入一次数据。
+2.先画流程图再编程：将例3.2-4（ 循环 5 次将输入的小写字母转换为大写字母并显示的程序）改写成只把大写字母转换成小写字母的程序，其它字符均原样输出。尝试输入回车、制表符（tab）等特殊字符，观察输出结果。
+#include<stdio.h>
+int main() {
+char c,i;
+43 / 290
+for(i=0;i<5;i++)
+{
+c=getchar();
+putchar(c-'a'+'A');
+}
+return 0; 
+}
+3.画出例 3.4-1 （求三个整数中的最大值）的流程图
+#include <stdio.h>
+int main() {
+int num1,num2,num3,max;
+printf("请输入三个整数（以空格分隔）:");
+scanf("%d%d%d",&num1,&num2,&num3);
+if (num1>num2) max=num1;
+else max=num2;
+if (num3>max) max=num3;
+printf("这三个整数中最大值为：%d\n",max);
+return 0;
+}
+4. 编程输入三个小写字母并按字母表顺序从前向后输出这三个字母。
